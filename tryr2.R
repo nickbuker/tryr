@@ -109,3 +109,9 @@ plot(x, y)
 values = -10:10
 absolutes = abs(values)
 plot(values, absolutes)
+
+# 2.8 NA values
+# sum an array with an NA
+a = c(1, 3, NA, 7, 9)
+sum(a) # returns NA to alert user of NA in data
+sum(a, na.rm = T) # this argument will remove the NA's and then sum
