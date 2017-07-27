@@ -52,3 +52,60 @@ sentence[5:7] = c('the', 'poop', 'deck')
 sentence[6]
 
 # 2.4 vector names
+# assign names to vector elements
+ranks = 1:3
+names(ranks) = c('first', 'second', 'third')
+
+# get element named 'first'
+ranks['first']
+
+# change the element 'third' to 4
+ranks['third'] = 4
+
+# 2.5 plotting a vector
+# create a barplot
+vesslesSunk = c(4, 5, 1)
+barplot(vesslesSunk)
+
+# assign names to elements and plot again
+names(vesslesSunk) = c('England', 'France', 'Norway')
+barplot(vesslesSunk)
+
+# call barplot on a sequence vector
+barplot(1:100)
+
+# 2.6 vector math
+# scaler vector addition
+a = c(1, 2, 3)
+a + 1
+
+# scaler vector division and multiplication
+a / 2
+a * 2
+
+# vector vector addition and substraction
+b = c(4, 5, 6)
+a + b
+a - b
+
+# comparing vectors
+a == b
+a == c(1, 99, 3)
+a < b
+
+# use functions on a
+sin(a)
+sqrt(a)
+
+# 2.6 scatter plots
+# create data
+x = seq(1, 20, 0.1)
+y = sin(x)
+
+# use the plot function
+plot(x, y)
+
+# make more data and plot
+values = -10:10
+absolutes = abs(values)
+plot(values, absolutes)
