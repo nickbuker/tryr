@@ -38,3 +38,28 @@ plank[2,] # 2nd row
 
 # retrieve multiple rows or columns
 plank[, 2:4]
+
+# 3.3 matrix plotting
+# create matrix
+elevation = = matrix(1, 10, 10)
+
+# create a hole
+elevation[4, 6] = 0
+
+# create a countour map
+contour(elevation)
+
+# create a 3D perspective plot
+persp(elevation)
+
+# change the view to add some space
+persp(elevation, expand=0.5)
+
+# create contour map using the volcano dataset included in R
+countour(volcano)
+
+# now with persp
+persp(volcano, expand=0.2)
+
+# create a heatmap with image
+image(volcano)
